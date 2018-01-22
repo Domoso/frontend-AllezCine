@@ -11,9 +11,6 @@ nav {
   nav .nav-link {
     color: white; }
 
-body {
-  color: white; }
-
 h1 {
   font-size: 40px;
   font-weight: 900; }
@@ -30,7 +27,7 @@ h5 {
 
 .jumbotron {
   width: 100%;
-  padding: 0; }
+  padding: 0 !important; }
   .jumbotron button {
     background-color: #f44140;
     border-radius: 1;

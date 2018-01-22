@@ -15,11 +15,6 @@ nav {
 	}
 }
 
-body {
-	color: white;
-}
-
-
 h1 {
 	font-size: 40px;
 	font-weight: 900;
@@ -40,7 +35,7 @@ h5 {
 
 .jumbotron {
 	width : 100%;
-	padding: 0;
+	padding: 0 !important;
 	button {
 		background-color: rgb(244,65,64);
 		border-radius: 1;
