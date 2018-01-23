@@ -10,6 +10,11 @@ nav {
     background-color: #f44140 !important; }
   nav .nav-link {
     color: white; }
+  nav form {
+    padding-top: 10px;
+    padding-left: 150px; }
+    nav form i {
+      color: white; }
 
 h1 {
   font-size: 40px;
@@ -25,6 +30,54 @@ h5 {
 img {
   -webkit-filter: brightness(0.3);
           filter: brightness(0.3); }
+
+#Recherche {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  height: 25px; }
+
+#login {
+  width: 100%;
+  height: 30%;
+  background-color: #f44140;
+  padding: 0.5%;
+  color: white; }
+  #login button {
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 2px 11px 2px 11px; }
+  #login i {
+    margin-left: 25px; }
+  #login .premier {
+    margin-left: 22px; }
+
+#featured_movies {
+  margin-top: 150px;
+  margin-left: 80px;
+  padding-left: 8px;
+  border-left: 3px solid red; }
+
+#featured_series_tv {
+  margin-top: 150px;
+  margin-left: 80px;
+  padding-left: 8px;
+  border-left: 3px solid red; }
+
+#shop {
+  margin-top: 150px;
+  margin-left: 80px;
+  padding-left: 8px;
+  border-left: 3px solid red; }
+
+#contact {
+  margin-top: 150px;
+  margin-left: 80px;
+  padding-left: 8px;
+  border-left: 3px solid red; }
 
 .container-fluid {
   padding: 0; }
@@ -56,24 +109,7 @@ img {
 .carousel-indicators .active {
   background-color: #f44140; }
 
-#login {
-  width: 100%;
-  height: 30%;
-  background-color: #f44140;
-  padding: 0.5%;
-  color: white; }
-  #login button {
-    border: none;
-    background-color: black;
-    color: white;
-    font-size: 15px;
-    padding: 2px 11px 2px 11px; }
-
-#Recherche {
-  background-color: rgba(0, 0, 0, 0.7);
-  border: none;
-  border-radius: 30px;
-  color: white;
-  height: 25px; }
+.macouleur {
+  background-color: none !important; }
 
 /*# sourceMappingURL=style.css.map */
