@@ -1,0 +1,99 @@
+footer {
+	width : 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background-color: black;
+	ul {
+	list-style-type: none;
+	padding: 0;	
+	}
+	p {
+		color: #959897;
+		border-bottom: 1px solid #293033;
+		padding: 15px 5px ;
+	}
+	li {
+		color: #293033;
+		font-size: 0.8em;
+	}
+	.release, .movies, .reviewMovies, .latestMovies, .randomShoot {
+		padding: 20px;
+		width: 20%
+	}
+	.subscribeBox {
+		width: 30%;
+		margin: 5em calc(50% - 15%) 0 calc(50% - 15%);
+		display: flex;
+		justify-content: center;
+		padding-top: 10px;
+		flex-wrap: wrap;
+		span {
+			font-size: 1.5em;
+		}
+		button {
+			background-color: rgb(244,65,64);
+			color: white;
+			padding: 0.2em;
+			margin-left: 1em;
+			border: none;
+		}
+		input {
+			width: 70%;
+			border: none;
+		}
+	}
+	.reviewMovies {
+			ul {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			li {
+				background-color: #293033;
+				color: #959897;
+				font-size: 0.6em;
+				padding: 0.5em;
+				margin: 0.2em 0.2em;
+			}
+		}
+	.latestMovies {
+		.latestMovieBox {
+			display: flex;
+			margin-bottom: 0.5em;
+			p {
+				font-size: 0.8em;
+				color: #293033;
+				border-bottom: none;
+			}
+			.boxGrey {
+				width: 35%;
+				background-color: #293033;
+				margin-right: 0.5em;
+			}
+		}
+	}
+	.footerSocial {
+		width: 100%;
+		text-align: center;
+		ul {
+			display: flex;
+			justify-content: center;
+		}
+		li {
+			padding: 10px;
+			color: #959897;
+			border: 1px solid #959897;
+			margin: 0 0.5em;
+		}
+		li:hover {
+			color: rgb(244,65,64);
+			border: 1px solid rgb(244,65,64);
+		}
+		p {
+			border-bottom: none;
+			border-top: 1px solid #293033;
+			padding-bottom: 0;
+		}
+	}
+}

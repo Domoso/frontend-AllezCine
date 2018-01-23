@@ -86,6 +86,14 @@ img {
 	}
 }
 
+@import "_footer.scss";
+
+// MAIN SECTION
+
+@import "_contact.scss";
+
+@import "_social.scss";
+
 #Recherche {
 		background-color: rgba(0, 0, 0, 0.7);
 		border: none;
@@ -93,3 +101,4 @@ img {
 		color: white;
 		height: 25px;
 	}
+
