@@ -144,3 +144,34 @@ img {
 .macouleur {
 		background-color: none !important;
 	}
+
+#login {
+	width: 100%;
+	height: 30%;
+	background-color: rgb(244,65,64);
+	padding: 0.5%;
+	color: white;
+	button {
+		border: none;
+		background-color: black;
+		color: white;
+		font-size: 15px;
+		padding: 2px 11px 2px 11px;
+	}
+}
+
+@import "_footer.scss";
+
+// MAIN SECTION
+
+@import "_contact.scss";
+
+@import "_social.scss";
+
+#Recherche {
+		background-color: rgba(0, 0, 0, 0.7);
+		border: none;
+		border-radius: 30px;
+		color: white;
+		height: 25px;
+	}
