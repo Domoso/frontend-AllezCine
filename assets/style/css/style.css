@@ -66,4 +66,100 @@ h5 {
     font-size: 15px;
     padding: 2px 11px 2px 11px; }
 
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: black; }
+  footer ul {
+    list-style-type: none;
+    padding: 0; }
+  footer p {
+    color: #959897;
+    border-bottom: 1px solid #293033;
+    padding: 15px 5px; }
+  footer li {
+    color: #293033;
+    font-size: 0.8em; }
+  footer .release, footer .movies, footer .reviewMovies, footer .latestMovies, footer .randomShoot {
+    padding: 20px;
+    width: 20%; }
+  footer .subscribeBox {
+    width: 30%;
+    margin: 5em calc(50% - 15%) 0 calc(50% - 15%);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    flex-wrap: wrap; }
+    footer .subscribeBox span {
+      font-size: 1.5em; }
+    footer .subscribeBox button {
+      background-color: #f44140;
+      color: white;
+      padding: 0.2em;
+      margin-left: 1em;
+      border: none; }
+    footer .subscribeBox input {
+      width: 70%;
+      border: none; }
+  footer .reviewMovies ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+  footer .reviewMovies li {
+    background-color: #293033;
+    color: #959897;
+    font-size: 0.6em;
+    padding: 0.5em;
+    margin: 0.2em 0.2em; }
+  footer .latestMovies .latestMovieBox {
+    display: flex;
+    margin-bottom: 0.5em; }
+    footer .latestMovies .latestMovieBox p {
+      font-size: 0.8em;
+      color: #293033;
+      border-bottom: none; }
+    footer .latestMovies .latestMovieBox .boxGrey {
+      width: 35%;
+      background-color: #293033;
+      margin-right: 0.5em; }
+  footer .footerSocial {
+    width: 100%;
+    text-align: center; }
+    footer .footerSocial ul {
+      display: flex;
+      justify-content: center; }
+    footer .footerSocial li {
+      padding: 10px;
+      color: #959897;
+      border: 1px solid #959897;
+      margin: 0 0.5em; }
+    footer .footerSocial li:hover {
+      color: #f44140;
+      border: 1px solid #f44140; }
+    footer .footerSocial p {
+      border-bottom: none;
+      border-top: 1px solid #293033;
+      padding-bottom: 0; }
+
+#contact {
+  position: relative; }
+  #contact h2 {
+    padding-bottom: 7em; }
+  #contact .contactFormular {
+    position: absolute;
+    top: 60px;
+    width: 80%;
+    margin-left: calc(50% - 40%);
+    padding: 1em;
+    background-color: white; }
+    #contact .contactFormular input, #contact .contactFormular textarea {
+      width: 100%; }
+    #contact .contactFormular button {
+      background-color: #f44140;
+      color: white;
+      padding: 0.2em;
+      border: none; }
+
 /*# sourceMappingURL=style.css.map */
