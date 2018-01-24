@@ -1,0 +1,35 @@
+/*
+Error: Invalid CSS after "<": expected "{", was "!DOCTYPE html>"
+        on line 1 of /home/user/Bureau/BeCode/frontend-AllezCine/assets/style/css/style.scss
+
+1: <!DOCTYPE html>
+2: <html>
+3: <head>
+4: 	<title>Allez-ciné</title>
+5: 	<meta charset="utf-8">
+6: 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+Backtrace:
+/home/user/Bureau/BeCode/frontend-AllezCine/assets/style/css/style.scss:1
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1179:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1115:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1110:in `tok!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:654:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:647:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:673:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:663:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:123:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:39:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:403:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:378:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:295:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:410:in `run'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:52:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:19:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"<\": expected \"{\", was \"!DOCTYPE html>\"\A         on line 1 of /home/user/Bureau/BeCode/frontend-AllezCine/assets/style/css/style.scss\A \A 1: <!DOCTYPE html>\A 2: <html>\A 3: <head>\A 4: 	<title>Allez-ciné</title>\A 5: 	<meta charset=\"utf-8\">\A 6: 	<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">"; }
