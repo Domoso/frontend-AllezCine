@@ -38,11 +38,27 @@ h5 {
 	font-weight: 400;
 }
 
-img {
-	filter: brightness(0.30);
+// ID
+
+#carouselHeader {
+	img {
+		filter: brightness(0.30);
+	}
 }
 
-// ID
+#carouselHotShot {
+	width: 59.8%;
+	margin-top: 10px;
+	margin-left: 275px;
+	border: 1px solid #ddd;
+	overflow: hidden;
+	img {
+		padding: 20px;
+		border: none;
+	}
+}
+
+#carouselExampleIndicators
 
 #Recherche {
 		background-color: rgba(0, 0, 0, 0.9);
@@ -144,6 +160,10 @@ img {
 .macouleur {
 		background-color: none !important;
 	}
+
+.carousel-indicators {
+	bottom: -8px;
+}
 
 #login {
 	width: 100%;
