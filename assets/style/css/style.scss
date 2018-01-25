@@ -64,6 +64,10 @@ h5 {
 	font-weight: 400;
 }
 
+span {
+	color: rgb(244,65,64);
+	}
+
 // ID
 
 #carouselHeader {
@@ -91,7 +95,7 @@ h5 {
 	}
 }
 
-#carouselExampleIndicators
+// #carouselExampleIndicators
 
 #Recherche {
 		background-color: rgba(0, 0, 0, 0.9);
@@ -128,6 +132,7 @@ h5 {
 	padding-left: 8px;
 	h2 {
 		border-left: 3px solid red;
+		padding-left: 10px;
 	}
 }
 
@@ -137,6 +142,7 @@ h5 {
 	padding-left: 8px;
 	h2 {
 		border-left: 3px solid red;
+		padding-left: 10px;
 	}
 }
 
@@ -146,6 +152,7 @@ h5 {
 	padding-left: 8px;
 	h2 {
 		border-left: 3px solid red;
+		padding-left: 10px;
 	}
 }
 
@@ -153,7 +160,9 @@ h5 {
 	margin-top: 150px;
 	margin-left: 80px;
 	padding-left: 8px;
-	h2 {
+	.bordercontact {
+		color: black;
+		padding-left: 10px;
 		border-left: 3px solid red;
 	}
 }
@@ -174,9 +183,6 @@ h5 {
 		border: none;
 		color: white;
 		padding: 10px;
-	}
-	span {
-	color: rgb(244,65,64);
 	}
 }
 
