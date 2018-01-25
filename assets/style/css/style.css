@@ -285,6 +285,25 @@ footer #movieWrapperFooter .movieBoxFooter img {
   margin-left: 10px;
   width: 40%;
   background-color: black;
+  height: 39.5em;
+}
+#movieWrapperShop .movieShopRight .trailerDescription {
+  width: 100%;
+  padding: 1.5em;
+  color: white;
+}
+#movieWrapperShop .movieShopRight .trailerDescription span {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+#movieWrapperShop .movieShopRight .trailerBox {
+  width: 90%;
+  margin-left: calc(50% - 45%);
+  padding-top: 1.5em;
+}
+#movieWrapperShop .movieShopRight .trailerBox iframe {
+  width: 100%;
+  height: 300px;
 }
 
 #genderButtons {
@@ -311,6 +330,15 @@ footer #movieWrapperFooter .movieBoxFooter img {
 #movieWrapper .movieBox img, #movieWrapperAll .movieBox img {
   width: 100%;
   filter: brightness(1);
+}
+
+#moreMoviesButton {
+  background-color: #f44140;
+  color: white;
+  padding: 0.2em;
+  margin-left: 1em;
+  border: none;
+  margin-left: calc(44.5% - 56px);
 }
 
 #contact {
@@ -384,6 +412,10 @@ footer #movieWrapperFooter .movieBoxFooter img {
   border-radius: 30px;
   color: white;
   height: 25px;
+}
+
+img {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
