@@ -239,6 +239,10 @@ h5 {
 
 // MAIN SECTION
 
+@import "_shopmovies.scss";
+
+@import "_featuratedmovies.scss";
+
 @import "_contact.scss";
 
 @import "_social.scss";
@@ -250,3 +254,8 @@ h5 {
 		color: white;
 		height: 25px;
 	}
+
+//IMAGE CLICK
+img {
+	cursor: pointer;
+}

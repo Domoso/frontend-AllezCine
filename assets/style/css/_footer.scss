@@ -96,4 +96,16 @@ footer {
 			padding-bottom: 0;
 		}
 	}
+
+	#movieWrapperFooter {
+		display: flex;
+		flex-wrap: wrap;
+		.movieBoxFooter {
+			width: 30%;
+			img {
+				width: 100%;
+				filter: brightness(1);
+			}
+		}
+	}
 }
