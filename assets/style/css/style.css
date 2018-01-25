@@ -1,3 +1,25 @@
+.rowindex {
+  border: 1px solid black;
+  height: 50%;
+  width: 50%;
+  margin-top: calc(40% - 25%);
+  margin-left: calc(50% - 25%); }
+
+.colindex {
+  border: 1px solid black; }
+
+.spanindex {
+  color: #f44140; }
+
+.eighteen {
+  font-size: 50px; }
+
+.plus {
+  color: #f44140; }
+
+.question {
+  font-size: 50px; }
+
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -71,26 +93,30 @@ h5 {
 #featured_movies {
   margin-top: 150px;
   margin-left: 80px;
-  padding-left: 8px;
-  border-left: 3px solid red; }
+  padding-left: 8px; }
+  #featured_movies h2 {
+    border-left: 3px solid red; }
 
 #featured_series_tv {
   margin-top: 150px;
   margin-left: 80px;
-  padding-left: 8px;
-  border-left: 3px solid red; }
+  padding-left: 8px; }
+  #featured_series_tv h2 {
+    border-left: 3px solid red; }
 
 #shop {
   margin-top: 150px;
   margin-left: 80px;
-  padding-left: 8px;
-  border-left: 3px solid red; }
+  padding-left: 8px; }
+  #shop h2 {
+    border-left: 3px solid red; }
 
 #contact {
   margin-top: 150px;
   margin-left: 80px;
-  padding-left: 8px;
-  border-left: 3px solid red; }
+  padding-left: 8px; }
+  #contact h2 {
+    border-left: 3px solid red; }
 
 .container-fluid {
   padding: 0; }
