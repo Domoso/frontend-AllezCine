@@ -1,4 +1,4 @@
-#genderButtons {
+.genderButtons {
 	width: 90%;
 	display: flex;
 	button {
@@ -10,7 +10,7 @@
 	}
 }
 
-#movieWrapper, #movieWrapperAll  {
+#movieWrapper, #movieWrapperAll, #serieWrapper, #serieWrapperAll  {
 	width: 90%;
 	display: flex;
 	justify-content: space-between;
@@ -23,7 +23,7 @@
 		}
 	}
 }
-#moreMoviesButton {
+#moreMoviesButton, #moreSeriesButton {
 	background-color: rgb(244,65,64);
 	color: white;
 	padding: 0.2em;

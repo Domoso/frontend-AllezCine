@@ -381,11 +381,11 @@ footer #movieWrapperFooter .movieBoxFooter img {
   height: 300px;
 }
 
-#genderButtons {
+.genderButtons {
   width: 90%;
   display: flex;
 }
-#genderButtons button {
+.genderButtons button {
   background-color: #f1eff1;
   border-radius: 1;
   border: none;
@@ -393,21 +393,21 @@ footer #movieWrapperFooter .movieBoxFooter img {
   margin: 1em 0.3em 1em 0;
 }
 
-#movieWrapper, #movieWrapperAll {
+#movieWrapper, #movieWrapperAll, #serieWrapper, #serieWrapperAll {
   width: 90%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-#movieWrapper .movieBox, #movieWrapperAll .movieBox {
+#movieWrapper .movieBox, #movieWrapperAll .movieBox, #serieWrapper .movieBox, #serieWrapperAll .movieBox {
   width: 15%;
 }
-#movieWrapper .movieBox img, #movieWrapperAll .movieBox img {
+#movieWrapper .movieBox img, #movieWrapperAll .movieBox img, #serieWrapper .movieBox img, #serieWrapperAll .movieBox img {
   width: 100%;
   filter: brightness(1);
 }
 
-#moreMoviesButton {
+#moreMoviesButton, #moreSeriesButton {
   background-color: #f44140;
   color: white;
   padding: 0.2em;

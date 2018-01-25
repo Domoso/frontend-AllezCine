@@ -23,11 +23,59 @@ const libraryMovie = [
 	new Movie("Swiss Army Man","comedy", "assets/image/thumbnail/swissarmyman-2016-comedie.jpg" ,2016,'<iframe src="https://www.youtube.com/embed/yrK1f4TsQfM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
 	new Movie("The Fall","drama","assets/image/thumbnail/thefall-2006-dramatique.jpg",2006,'<iframe src="https://www.youtube.com/embed/dyFrBC1rAcg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
 	new Movie("What We Do In The Shadows","comedy","assets/image/thumbnail/WhatWeDoInTheShadows-2014-comedie.jpg",2014,'<iframe src="https://www.youtube.com/embed/IAZEWtyhpes" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
-	new Movie("Zoolander","comedy","assets/image/thumbnail/zoolander-2001-comedie.jpg",2001,'<iframe src="https://www.youtube.com/embed/YtQq0T3ExLs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$")
+	new Movie("Zoolander","comedy","assets/image/thumbnail/zoolander-2001-comedie.jpg",2001,'<iframe src="https://www.youtube.com/embed/YtQq0T3ExLs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
+	new Movie("Baby Driver","thriller","assets/image/thumbnail/baby-driver.jpg", 2017,'<iframe src="https://www.youtube.com/embed/z2z857RSfhk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("Coco","Comedy","assets/image/thumbnail/coco.jpg", 2017,'<iframe src="https://www.youtube.com/embed/zNCz4mQzfEI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("Get Out","Thriller","assets/image/thumbnail/getout.jpg", 2017,'<iframe src="https://www.youtube.com/embed/xM1YpntE840" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("Blade Runner","scifi","assets/image/thumbnail/bladerunner.jpg", 2017,'<iframe src="https://www.youtube.com/embed/gCcx85zbxz4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("Dunkerque","drama","assets/image/thumbnail/dunkerque.jpg", 2017,'<iframe src="https://www.youtube.com/embed/F-eMt3SrfFU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("Star Wars: the last Jedis","scifi","assets/image/thumbnail/LastJedi-1.jpg", 2017,'<iframe src="https://www.youtube.com/embed/Q0CbN8sfihY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("Logan","scifi","assets/image/thumbnail/logan.jpg", 2017,'<iframe src="https://www.youtube.com/embed/Div0iP65aZo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("Phantom Thread","drama","assets/image/thumbnail/phantomthread.jpg", 2017,'<iframe src="https://www.youtube.com/embed/xNsiQMeSvMk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("The Post","thriller","assets/image/thumbnail/the-post.jpg", 2017,'<iframe src="https://www.youtube.com/embed/nrXlY6gzTTM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("Wonder Woman","fantastic","assets/image/thumbnail/wonderwoman.jpg", 2017,'<iframe src="https://www.youtube.com/embed/VSB4wGIdDwo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$")
+];
+
+function Serie(title, gender, cover, trailer, price) {
+	this.title = title;
+	this.gender = gender;
+	this.cover = cover;
+	this.trailer = trailer;
+	this.price = price;
+};
+
+const librarySerie = [
+	new Serie("Archer","polar","assets/image/thumbnail/séries/Archer.jpg",'<iframe src="https://www.youtube.com/embed/GV_QT9wUVwA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Breaking Bad","thriller","assets/image/thumbnail/séries/BreakingBad.jpg",'<iframe src="https://www.youtube.com/embed/lrcqbavlbyQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Dexter","polar","assets/image/thumbnail/séries/Dexter.jpg",'<iframe src="https://www.youtube.com/embed/YQeUmSD1c3g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Friends","comedy","assets/image/thumbnail/séries/Friends.jpg",'<iframe src="https://www.youtube.com/embed/hDNNmeeJs1Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Game of Thrones","fantastic","assets/image/thumbnail/séries/GameofThrones.jpg",'<iframe src="https://www.youtube.com/embed/giYeaKsXnsI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Gotham","polar","assets/image/thumbnail/séries/Gotham.jpg",'<iframe src="https://www.youtube.com/embed/ysfvCuhoj-k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Heroes","scifi","assets/image/thumbnail/séries/Heroes.jpg",'<iframe src="https://www.youtube.com/embed/9AX6aXFdTkc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("House","comedy","assets/image/thumbnail/séries/House.jpg",'<iframe src="https://www.youtube.com/embed/MczMB8nU1sY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("How I Met Your Mother","comedy","assets/image/thumbnail/séries/HowIMetYourMother.jpg",'<iframe src="https://www.youtube.com/embed/yOe4_kdqsmU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Lost","fantastic","assets/image/thumbnail/séries/Lost.jpg",'<iframe src="https://www.youtube.com/embed/KTu8iDynwNc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Marco Polo","adventure","assets/image/thumbnail/séries/MarcoPolo.jpg",'<iframe src="https://www.youtube.com/embed/hB-ltNasHVw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Daredevil","fantastic","assets/image/thumbnail/séries/MarvelsDaredevil.jpg",'<iframe src="https://www.youtube.com/embed/jAy6NJ_D5vU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Narcos","polar","assets/image/thumbnail/séries/Narcos.jpg",'<iframe src="https://www.youtube.com/embed/U7elNhHwgBU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Peaky Blinders","polar","assets/image/thumbnail/séries/PeakyBlinders.jpg",'<iframe src="https://www.youtube.com/embed/JwXfVGjSz-4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Penny Dreadful","fantastic","assets/image/thumbnail/séries/PennyDreadful.jpg",'<iframe src="https://www.youtube.com/embed/YFXHfEqMcis" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Sons of Anarchy","thriller","assets/image/thumbnail/séries/SonsofAnarchy.jpg",'<iframe src="https://www.youtube.com/embed/NtyIzwKwWIU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Spartacus","adventure","assets/image/thumbnail/séries/Spartacus.jpg",'<iframe src="https://www.youtube.com/embed/eJiBouML3FQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Stranger Things","fantastic","assets/image/thumbnail/séries/StrangerThings.jpg",'<iframe src="https://www.youtube.com/embed/R1ZXOOLMJ8s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Suits","adventure","assets/image/thumbnail/séries/Suits.jpg",'<iframe src="https://www.youtube.com/embed/85z53bAebsI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("The Leftovers","fantastic","assets/image/thumbnail/séries/TheLeftovers.jpg",'<iframe src="https://www.youtube.com/embed/vAB4Ux62Dww" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("The Mentalist","polar","assets/image/thumbnail/séries/TheMentalist.jpg",'<iframe src="https://www.youtube.com/embed/YyAGm6tcdqk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("The Mist","fantastic","assets/image/thumbnail/séries/TheMist.jpg",'<iframe src="https://www.youtube.com/embed/INZJP8vUL_c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("The Walking Dead","fantastic","assets/image/thumbnail/séries/TheWalkingDead.jpg",'<iframe src="https://www.youtube.com/embed/zljB0ScC3Mw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
+	new Serie("Weeds","comedy","assets/image/thumbnail/séries/Weeds.jpg",'<iframe src="https://www.youtube.com/embed/qZDIH2gbJMM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
 ];
 
 
-//Filters by gender of each Movie
+//FILTERS by gender 
+
+// --> MOVIES
+
 $(".js-scifi").click( function() {
 	$("#movieWrapper").html(" ");
 	for(i=0 ; i<libraryMovie.length ; i++) {
@@ -103,8 +151,99 @@ $(".js-all").click( function() {
 	$("#moreMoviesButton").show();
 });
 
+//--> Series
 
-//All movies appear
+$(".js-adventure-serie").click( function() {
+	$("#serieWrapper").html(" ");
+	for(i=0 ; i<librarySerie.length ; i++) {
+		if (librarySerie[i].gender==="adventure") {
+			$("#serieWrapper").append(
+				"<div class=movieBox><img src="+librarySerie[i].cover+"><p>"+librarySerie[i].title+"</p><p>"+librarySerie[i].gender+"</p></div>"
+				);
+		}
+	}
+	$("#moreSeriesButton").hide();
+	$("#serieWrapperAll").hide();
+});
+
+$(".js-comedy-serie").click( function() {
+	$("#serieWrapper").html(" ");
+	for(i=0 ; i<librarySerie.length ; i++) {
+		if (librarySerie[i].gender==="comedy") {
+			$("#serieWrapper").append(
+				"<div class=movieBox><img src="+librarySerie[i].cover+"><p>"+librarySerie[i].title+"</p><p>"+librarySerie[i].gender+"</p></div>"
+				);
+		}
+	}
+	$("#moreSeriesButton").hide();
+	$("#serieWrapperAll").hide();
+});
+
+$(".js-fantastic-serie").click( function() {
+	$("#serieWrapper").html(" ");
+	for(i=0 ; i<librarySerie.length ; i++) {
+		if (librarySerie[i].gender==="fantastic") {
+			$("#serieWrapper").append(
+				"<div class=movieBox><img src="+librarySerie[i].cover+"><p>"+librarySerie[i].title+"</p><p>"+librarySerie[i].gender+"</p></div>"
+				);
+		}
+	}
+	$("#moreSeriesButton").hide();
+	$("#serieWrapperAll").hide();
+});
+
+$(".js-thriller-serie").click( function() {
+	$("#serieWrapper").html(" ");
+	for(i=0 ; i<librarySerie.length ; i++) {
+		if (librarySerie[i].gender==="thriller") {
+			$("#serieWrapper").append(
+				"<div class=movieBox><img src="+librarySerie[i].cover+"><p>"+librarySerie[i].title+"</p><p>"+librarySerie[i].gender+"</p></div>"
+				);
+		}
+	}
+	$("#moreSeriesButton").hide();
+	$("#serieWrapperAll").hide();
+});
+
+$(".js-scifi-serie").click( function() {
+	$("#serieWrapper").html(" ");
+	for(i=0 ; i<librarySerie.length ; i++) {
+		if (librarySerie[i].gender==="scifi") {
+			$("#serieWrapper").append(
+				"<div class=movieBox><img src="+librarySerie[i].cover+"><p>"+librarySerie[i].title+"</p><p>"+librarySerie[i].gender+"</p></div>"
+				);
+		}
+	}
+	$("#moreSeriesButton").hide();
+	$("#serieWrapperAll").hide();
+});
+
+$(".js-polar-serie").click( function() {
+	$("#serieWrapper").html(" ");
+	for(i=0 ; i<librarySerie.length ; i++) {
+		if (librarySerie[i].gender==="polar") {
+			$("#serieWrapper").append(
+				"<div class=movieBox><img src="+librarySerie[i].cover+"><p>"+librarySerie[i].title+"</p><p>"+librarySerie[i].gender+"</p></div>"
+				);
+		}
+	}
+	$("#moreSeriesButton").hide();
+	$("#serieWrapperAll").hide();
+});
+
+$(".js-all-serie").click( function() {
+	$("#serieWrapper").html(" ");
+	for(i=0 ; i<12 ; i++) {
+			$("#serieWrapper").append(
+				"<div class='movieBox'><img src="+librarySerie[i].cover+"><p>"+librarySerie[i].title+"</p><p>"+librarySerie[i].gender+"</p></div>"
+				);
+	}
+	$("#moreSeriesButton").show();
+});
+
+
+//ALL movies appear
+
 $("#movieWrapper").html(function (){
 	for(i=0 ; i<12; i++) {
 			$("#movieWrapper").append(
@@ -122,10 +261,30 @@ $("#movieWrapperAll").html(function (){
 });
 $("#movieWrapperAll").hide();
 
-//toggle movie section
+// ALL series appear
+
+$("#serieWrapper").html(function (){
+	for(i=0 ; i<12; i++) {
+			$("#serieWrapper").append(
+				"<div class='movieBox'><img src="+librarySerie[i].cover+"><p>"+librarySerie[i].title+"</p><p>"+librarySerie[i].gender+"</p></div>"
+				);
+		}
+});
+
+$("#serieWrapperAll").html(function (){
+	for(i=12 ; i< librarySerie.length ; i++) {
+			$("#serieWrapperAll").append(
+				"<div class='movieBox'><img src="+librarySerie[i].cover+"><p>"+librarySerie[i].title+"</p><p>"+librarySerie[i].gender+"</p></div>"
+				);
+		}
+});
+$("#serieWrapperAll").hide();
+
+
+//TOGGLE movie section
+
 $("#moreMoviesButton").click(function() {
 	if ($("#moreMoviesButton")[0].innerHTML ==="LESS MOVIES") {
-		console.log($("#moreMoviesButton").innerHTML)
 		$("#movieWrapperAll").hide();
 		$("#moreMoviesButton").text("MORE MOVIES");
 	}
@@ -135,8 +294,22 @@ $("#moreMoviesButton").click(function() {
 }
 	});
 
+//TOGGLE for series
+
+$("#moreSeriesButton").click(function() {
+	if ($("#moreSeriesButton")[0].innerHTML ==="LESS SERIES") {
+		$("#serieWrapperAll").hide();
+		$("#moreSeriesButton").text("MORE SERIES");
+	}
+	else {
+	$("#moreSeriesButton").text("LESS SERIES");
+	$("#serieWrapperAll").show();
+}
+	});
+
 
 //Footer random generation pictures
+
 $("#movieWrapperFooter").html(function(){
 	for(i=0 ; i < 6 ; i++) {
 		var j= Math.floor(Math.random()*libraryMovie.length);
@@ -147,6 +320,7 @@ $("#movieWrapperFooter").html(function(){
 
 
 //Shop movie generation pictures
+
 $(".movieShopLeft").html(function(){
 	for(i=0 ; i < 8 ; i++) {
 		var k= Math.floor(Math.random()*libraryMovie.length);
@@ -156,6 +330,7 @@ $(".movieShopLeft").html(function(){
 
 
 //Shop clic image generation trailer.
+
 $(".shopMovie").click(function(){
 	for (i=0 ; i < libraryMovie.length ; i++) {
 			if ($(this).attr("src") == libraryMovie[i].cover ) {
@@ -165,6 +340,3 @@ $(".shopMovie").click(function(){
 		}
 	}
 });
-
-
-
