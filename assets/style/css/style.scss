@@ -1,8 +1,8 @@
 // INDEX!!!
 
-// .modalindex {
-// 	width: 100%;
-// }
+.openModal {
+	z-index: 999;
+}
 
 .rowindex {
 	background: linear-gradient(#000000, #5E5E5E);
@@ -34,17 +34,32 @@
 	font-size: 50px;
 }
 
-.boolean {
+.booleanno {
 	color: black;
 	text-align: center;
 	text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
 }
 
-.boolean:hover{
+.booleanyes {
+	color: black;
+	text-align: center;
+	text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+}
+
+.booleanno:hover{
 	color: rgb(244,65,64);
 }
 
-.boolean:active{
+.booleanno:active{
+	color: rgb(244,65,64);
+	text-shadow: 2px 0px 0px black;
+}
+
+.booleanyes:hover{
+	color: rgb(244,65,64);
+}
+
+.booleanyes:active{
 	color: rgb(244,65,64);
 	text-shadow: 2px 0px 0px black;
 }

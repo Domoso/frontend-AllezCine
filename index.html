@@ -12,14 +12,14 @@
 	<script src="assets/javascript/jquery-2.2.4.js"></script>
 </head>
 <body>
-	<button data-toggle="modal" data-target="#batman">
+	<!-- <button data-toggle="modal" data-target="#batman">
     	LAUNCH ALLOCINE!
-	</button>
+	</button> -->
 	<div class="modal fade" id="batman" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content rowindex">
+	    <div class="modal-dialog modal-dialog-centered" role="document">
+	        <div class="modal-content rowindex">
 				<div class="modal-header">
-						<h1><span class="spanindex">ALLEZ</span>CINE!</h1>
+					<h1><span class="spanindex">ALLEZ</span>CINE!</h1>
 				</div>
 				<div class="modal-body">
 						<h1>Have <span class="spanindex">you</span> more than <span class="eighteen">18</span> <span class="question">?</span></h1>
@@ -43,7 +43,11 @@
 												<!--!!!!!!!!!!!!!!!!!SCRIPT!!!!!!!!!!!!!!!!!!!!-->
 
 	<script>
-		$(#batman).onload(function){};
+		$(window).load(function() {
+			console.log($("#batman").css("display"))
+			$("#batman").modal("show");
+			console.log($("#batman").css("display"))
+		});
 	</script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
