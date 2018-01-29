@@ -57,6 +57,7 @@
 
 .booleanyes:hover{
 	color: rgb(244,65,64);
+	cursor: pointer;
 }
 
 .booleanyes:active{
@@ -70,6 +71,35 @@
 	font-family : "Roboto", sans-serif;
 	margin: 0;
 	padding: 0;
+}
+
+// MODAL LOGIN
+
+#loginModal {
+	.OK {
+		background-color: rgb(244,65,64);
+		border: none;
+		border-radius: 5px;
+		color: white;
+		padding: 5px 15px 5px 15px;
+	}
+	.createaccount {
+		background-color: rgb(244,65,64);
+		border: none;
+		border-radius: 5px;
+		color: white;
+		padding: 10px;
+	}
+	.or {
+		text-align: center;
+	}
+	.cancel {
+		background-color: rgb(244,65,64);
+		border: none;
+		border-radius: 5px;
+		color: white;
+		padding: 5px;
+	}
 }
 
 // BALISES
