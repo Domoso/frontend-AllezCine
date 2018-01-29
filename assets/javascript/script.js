@@ -325,10 +325,12 @@ $(".movieShopLeft").html(function(){
 	for(i=0 ; i < 8 ; i++) {
 		var k= Math.floor(Math.random()*libraryMovie.length);
 		$(".movieShopLeft").append("<div class='movieBoxShop'><img class='shopMovie' src="+libraryMovie[k].cover+"><p>"+libraryMovie[k].title+"</p><p>"+libraryMovie[k].gender+" "+libraryMovie[k].year+"<span> "+libraryMovie[k].price+"</span></p></div>")
-	}
+	};
+	$(".movieShopRight").append("<div class='trailerBox'>"+libraryMovie[k].trailer+"</div><div class='trailerDescription'><span>"
+					+libraryMovie[k].title+"</span><span>Gender:</span><p>"+libraryMovie[k].gender+"</p><span>Released:</span><p>"+libraryMovie[k].year+"</p><span>Price:</span><span> "+libraryMovie[i].price+"</span>")
 });
 
-
+ 
 //Shop clic image generation trailer.
 
 $(".shopMovie").click(function(){
