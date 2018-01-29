@@ -1,14 +1,28 @@
+.openModal {
+  z-index: 999; }
+
 .rowindex {
-  border: 1px solid black;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#5E5E5E));
+  background: linear-gradient(#000000, #5E5E5E);
+  color: white;
+  border-radius: 15px;
   height: 50%;
-  width: 50%;
+  width: 120%;
   margin-top: calc(40% - 25%);
+
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.4); }
+
+.modal-footer a {
+  text-decoration: none; }
+
   margin-left: calc(50% - 25%);
 }
 
 .colindex {
   border: 1px solid black;
 }
+
 
 .spanindex {
   color: #f44140;
@@ -18,13 +32,40 @@
   font-size: 50px;
 }
 
+
+.question {
+  color: white;
+  font-size: 50px; }
+
 .plus {
   color: #f44140;
 }
 
-.question {
-  font-size: 50px;
-}
+
+
+.booleanno {
+  color: black;
+  text-align: center;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); }
+
+.booleanyes {
+  color: black;
+  text-align: center;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); }
+
+.booleanno:hover {
+  color: #f44140; }
+
+.booleanno:active {
+  color: #f44140;
+  text-shadow: 2px 0px 0px black; }
+
+.booleanyes:hover {
+  color: #f44140; }
+
+.booleanyes:active {
+  color: #f44140;
+  text-shadow: 2px 0px 0px black; }
 
 * {
   font-family: "Roboto", sans-serif;
@@ -73,19 +114,22 @@ span {
   margin-top: 10px;
   margin-left: 210px;
   border: 1px solid #ddd;
+  overflow: hidden; }
+
+  #carouselHotShot p {
+    text-align: center;
+    font-size: 12px; }
+  #carouselHotShot img {
+    border: none;
+    padding-top: 25px; }
+
   overflow: hidden;
 }
-#carouselHotShot p {
-  text-align: center;
-  font-size: 12px;
-}
-#carouselHotShot img {
-  border: none;
-  padding-top: 25px;
-}
+
 #carouselHotShot li {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
 
 #Recherche {
   background-color: rgba(0, 0, 0, 0.9);
@@ -221,6 +265,9 @@ span {
   font-size: 15px;
   padding: 2px 11px 2px 11px;
 }
+
+.carousel-indicators li {
+  background-color: rgba(0, 0, 0, 0.3); }
 
 .col-md-3 {
   -webkit-box-flex: 0;
