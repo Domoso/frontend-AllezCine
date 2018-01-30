@@ -13,30 +13,30 @@
 <body>
 	<div class="container-fluid">
 		<header class="jumbotron">
-				<nav>
-					<ul class="nav nav-pills">
+			<nav class="navbar navbar-expand-md navbar-dark">
+				<a class="navbar-brand" href="#"><h1><span>ALLEZ</span>CINE!</h1></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbarSm">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse collapse" id="collapsingNavbarSm">
+					<ul class="navbar-nav">
 						<li class="nav-item">
-							<h1 class="nav-link">
-								<span>ALLEZ</span>CINE!
-							</h1>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">HOME</a>
+							<a class="nav-link home" href="#"><span>Home</span></a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">GENRE</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Comedy</a>
-									<a class="dropdown-item" href="#">Western</a>
-									<a class="dropdown-item" href="#">Fiction</a>
-								</div>
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Genre</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Comedy</a>
+								<a class="dropdown-item" href="#">Western</a>
+								<a class="dropdown-item" href="#">Fiction</a>
+							</div>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#featured_movies">Movies</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#featured_series_tv">TV series</a>
+							<a class="nav-link" href="#featured_series_tv">TV Series</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#shop">Shop movies</a>
@@ -47,11 +47,12 @@
 						<li>
 							<form class="form-inline my-2 my-lg-0">
 								<input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search" id="Recherche">
-								<i class="fa fa-search" aria-hidden="true"></i>
+								<div class="loupe"><i class="fa fa-search" aria-hidden="true"></i></div>
 							</form>
 						</li>
 					</ul>
-				</nav>
+				</div>
+			</nav>
 
 				<div id="carouselHeader" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
@@ -436,7 +437,7 @@
 			<h2>
 				FEATURED SERIES TV
 			</h2>
-			<div class="genderButtons">
+			<div class="genderButtons responsive-wrap">
 				<button class="js-all-serie">All</button>
 				<button class="js-comedy-serie">Comedy</button>
 				<button class="js-polar-serie">Polar</button>

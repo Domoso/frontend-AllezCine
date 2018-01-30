@@ -379,3 +379,7 @@ $(".shopMovie").click(function(){
 		}
 	}
 });
+
+// Go home button
+
+<input type="button" value="Bouton à cliquer">
