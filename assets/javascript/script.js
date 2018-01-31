@@ -381,5 +381,53 @@ $(".shopMovie").click(function(){
 });
 
 // Go home button
+ // var return
 
-<input type="button" value="Bouton à cliquer">
+var returnToTopPage;
+var returnToTopElement;
+var returnBounding;
+var headerFocus;
+var topPage;
+
+
+
+  // return
+
+ returnToTopPage = document.createElement("button");
+ returnToTopPage.className = 'button_return';
+ returnToTopElement = document.createElement("i");
+ returnToTopElement.className = 'fa fa-arrow-up';
+ topPage = document.createElement("a");
+ returnToTopElement.appendChild(topPage);
+ returnToTopPage.appendChild(returnToTopElement);
+ document.body.appendChild(returnToTopPage);
+ returnToTopPage.classList.add('hiddenButtonAnimation');
+ headerFocus = document.querySelector('header');
+
+ window.addEventListener("scroll", displayButtonAndNavBack);
+
+ 
+function displayButtonAndNavBack() {
+
+	returnBounding = headerFocus.getBoundingClientRect();
+	if (returnBounding.bottom <= 0)
+	{
+		returnToTopPage.classList.remove('hiddenButtonAnimation');
+		returnToTopPage.classList.add('displayButtonAnimation');
+	}
+	else
+	{
+		returnToTopPage.classList.remove('displayButtonAnimation');
+		returnToTopPage.classList.add('hiddenButtonAnimation');
+	}
+ }
+
+returnToTopPage.addEventListener('click', function()
+{
+	window.scroll({
+  	top: 0, 
+  	left: 0, 
+  	behavior: 'smooth' 
+	});
+});
+window.onload = displayButtonAndNavBack();
