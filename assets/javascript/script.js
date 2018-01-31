@@ -1,7 +1,17 @@
+// Landing modal
+
+// $(window).load(function() {
+// 			$("#age").modal("show");
+// 		});
+// $("#age").modal({
+// 	backdrop: "static",
+// 	keyboard: false
+// })
 //Library  creation
 
-function Movie(title, gender, cover, year, trailer, price) {
+function Movie(title, id, gender, cover, year, trailer, price) {
 	this.title = title;
+	this.id = id;
 	this.gender = gender;
 	this.cover = cover;
 	this.year = year;
@@ -10,30 +20,30 @@ function Movie(title, gender, cover, year, trailer, price) {
 };
 
 const libraryMovie = [
-	new Movie("Lego Batman", "comedy", "assets/image/thumbnail/batmanmovie-2017-comedie.jpg" , 2017,'<iframe src="https://www.youtube.com/embed/iMdQXYQ_MD8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
-	new Movie("Hostel","thriller","assets/image/thumbnail/hostel-2005-thriller.jpg", 2005,'<iframe src="https://www.youtube.com/embed/4d5_lrn9v-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
-	new Movie("Inception","thriller","assets/image/thumbnail/inception-2010-scifi.jpg",2010,'<iframe src="https://www.youtube.com/embed/8hP9D6kZseM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
-	new Movie("Intouchables","comedy","assets/image/thumbnail/intouchables-2011-comedie.jpg",2011,'<iframe src="https://www.youtube.com/embed/cXu2MhWYUuE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
-	new Movie("Le Patient Anglais","drama","assets/image/thumbnail/lepatientanglais-1996-dramatique.jpg",1996,'<iframe src="https://www.youtube.com/embed/Xk_LRcOFT0c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
-	new Movie("The Two Towers","fantastic","assets/image/thumbnail/lesdeuxtours-2002-aventure.jpg",2002,'<iframe src="https://www.youtube.com/embed/ve5HZfrrUqc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
-	new Movie("Seven","thriller", "assets/image/thumbnail/seven-1995-thriller.jpg" ,1995,'<iframe src="https://www.youtube.com/embed/vr3UZ-axauU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
-	new Movie("Shutter Island","thriller","assets/image/thumbnail/shutterisland-2010-thriller.jpg", 2010,'<iframe src="https://www.youtube.com/embed/lhBTlYQcBC0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
-	new Movie("Star Wars II: The Empire Strikes Back", "scifi","assets/image/thumbnail/starwarsempire-1980-scifi.jpg",1980,'<iframe src="https://www.youtube.com/embed/JNwNXF9Y6kY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
-	new Movie("Survive Style 5","comedy","assets/image/thumbnail/Survivestyle5-2004-comedie.jpg",2004,'<iframe src="https://www.youtube.com/embed/LEH7nDkiPEk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
-	new Movie("Swiss Army Man","comedy", "assets/image/thumbnail/swissarmyman-2016-comedie.jpg" ,2016,'<iframe src="https://www.youtube.com/embed/yrK1f4TsQfM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
-	new Movie("The Fall","drama","assets/image/thumbnail/thefall-2006-dramatique.jpg",2006,'<iframe src="https://www.youtube.com/embed/dyFrBC1rAcg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
-	new Movie("What We Do In The Shadows","comedy","assets/image/thumbnail/WhatWeDoInTheShadows-2014-comedie.jpg",2014,'<iframe src="https://www.youtube.com/embed/IAZEWtyhpes" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
-	new Movie("Zoolander","comedy","assets/image/thumbnail/zoolander-2001-comedie.jpg",2001,'<iframe src="https://www.youtube.com/embed/YtQq0T3ExLs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
-	new Movie("Baby Driver","thriller","assets/image/thumbnail/baby-driver.jpg", 2017,'<iframe src="https://www.youtube.com/embed/z2z857RSfhk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
-	new Movie("Coco","Comedy","assets/image/thumbnail/coco.jpg", 2017,'<iframe src="https://www.youtube.com/embed/zNCz4mQzfEI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
-	new Movie("Get Out","Thriller","assets/image/thumbnail/getout.jpg", 2017,'<iframe src="https://www.youtube.com/embed/xM1YpntE840" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
-	new Movie("Blade Runner","scifi","assets/image/thumbnail/bladerunner.jpg", 2017,'<iframe src="https://www.youtube.com/embed/gCcx85zbxz4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
-	new Movie("Dunkerque","drama","assets/image/thumbnail/dunkerque.jpg", 2017,'<iframe src="https://www.youtube.com/embed/F-eMt3SrfFU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
-	new Movie("Star Wars: the last Jedis","scifi","assets/image/thumbnail/LastJedi-1.jpg", 2017,'<iframe src="https://www.youtube.com/embed/Q0CbN8sfihY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
-	new Movie("Logan","scifi","assets/image/thumbnail/logan.jpg", 2017,'<iframe src="https://www.youtube.com/embed/Div0iP65aZo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
-	new Movie("Phantom Thread","drama","assets/image/thumbnail/phantomthread.jpg", 2017,'<iframe src="https://www.youtube.com/embed/xNsiQMeSvMk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
-	new Movie("The Post","thriller","assets/image/thumbnail/the-post.jpg", 2017,'<iframe src="https://www.youtube.com/embed/nrXlY6gzTTM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
-	new Movie("Wonder Woman","fantastic","assets/image/thumbnail/wonderwoman.jpg", 2017,'<iframe src="https://www.youtube.com/embed/VSB4wGIdDwo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$")
+	new Movie("Lego Batman","Lego_Batman", "comedy", "assets/image/thumbnail/batmanmovie-2017-comedie.jpg" , 2017,'<iframe src="https://www.youtube.com/embed/iMdQXYQ_MD8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
+	new Movie("Hostel","Hostel","thriller","assets/image/thumbnail/hostel-2005-thriller.jpg", 2005,'<iframe src="https://www.youtube.com/embed/4d5_lrn9v-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
+	new Movie("Inception","Inception","thriller","assets/image/thumbnail/inception-2010-scifi.jpg",2010,'<iframe src="https://www.youtube.com/embed/8hP9D6kZseM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
+	new Movie("Intouchables","Intouchables","comedy","assets/image/thumbnail/intouchables-2011-comedie.jpg",2011,'<iframe src="https://www.youtube.com/embed/cXu2MhWYUuE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
+	new Movie("Le Patient Anglais","Le_Patient_Anglais","drama","assets/image/thumbnail/lepatientanglais-1996-dramatique.jpg",1996,'<iframe src="https://www.youtube.com/embed/Xk_LRcOFT0c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
+	new Movie("The Two Towers","The_Two_Towers","fantastic","assets/image/thumbnail/lesdeuxtours-2002-aventure.jpg",2002,'<iframe src="https://www.youtube.com/embed/ve5HZfrrUqc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
+	new Movie("Seven","Seven","thriller", "assets/image/thumbnail/seven-1995-thriller.jpg" ,1995,'<iframe src="https://www.youtube.com/embed/vr3UZ-axauU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
+	new Movie("Shutter Island","Shutter_Island","thriller","assets/image/thumbnail/shutterisland-2010-thriller.jpg", 2010,'<iframe src="https://www.youtube.com/embed/lhBTlYQcBC0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
+	new Movie("Star Wars II: The Empire Strikes Back","Star_Wars_II", "scifi","assets/image/thumbnail/starwarsempire-1980-scifi.jpg",1980,'<iframe src="https://www.youtube.com/embed/JNwNXF9Y6kY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
+	new Movie("Survive Style 5","Survive_Style_5","comedy","assets/image/thumbnail/Survivestyle5-2004-comedie.jpg",2004,'<iframe src="https://www.youtube.com/embed/LEH7nDkiPEk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
+	new Movie("Swiss Army Man","Swiss_Army_Man","comedy", "assets/image/thumbnail/swissarmyman-2016-comedie.jpg" ,2016,'<iframe src="https://www.youtube.com/embed/yrK1f4TsQfM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
+	new Movie("The Fall","The_Fall","drama","assets/image/thumbnail/thefall-2006-dramatique.jpg",2006,'<iframe src="https://www.youtube.com/embed/dyFrBC1rAcg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
+	new Movie("What We Do In The Shadows","What_We_Do_In_The_Shadows","comedy","assets/image/thumbnail/WhatWeDoInTheShadows-2014-comedie.jpg",2014,'<iframe src="https://www.youtube.com/embed/IAZEWtyhpes" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
+	new Movie("Zoolander","Zoolander","comedy","assets/image/thumbnail/zoolander-2001-comedie.jpg",2001,'<iframe src="https://www.youtube.com/embed/YtQq0T3ExLs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',"5$"),
+	new Movie("Baby Driver","Baby_Driver","thriller","assets/image/thumbnail/baby-driver.jpg", 2017,'<iframe src="https://www.youtube.com/embed/z2z857RSfhk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("Coco","Coco","Comedy","assets/image/thumbnail/coco.jpg", 2017,'<iframe src="https://www.youtube.com/embed/zNCz4mQzfEI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("Get Out","Get_Out","Thriller","assets/image/thumbnail/getout.jpg", 2017,'<iframe src="https://www.youtube.com/embed/xM1YpntE840" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("Blade Runner","Blade_Runner","scifi","assets/image/thumbnail/bladerunner.jpg", 2017,'<iframe src="https://www.youtube.com/embed/gCcx85zbxz4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("Dunkerque","Dunkerque","drama","assets/image/thumbnail/dunkerque.jpg", 2017,'<iframe src="https://www.youtube.com/embed/F-eMt3SrfFU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("Star Wars: the last Jedis","Star_Wars_VIII","scifi","assets/image/thumbnail/LastJedi-1.jpg", 2017,'<iframe src="https://www.youtube.com/embed/Q0CbN8sfihY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("Logan","Logan","scifi","assets/image/thumbnail/logan.jpg", 2017,'<iframe src="https://www.youtube.com/embed/Div0iP65aZo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("Phantom Thread","Phantom_Thread","drama","assets/image/thumbnail/phantomthread.jpg", 2017,'<iframe src="https://www.youtube.com/embed/xNsiQMeSvMk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("The Post","The_Post","thriller","assets/image/thumbnail/the-post.jpg", 2017,'<iframe src="https://www.youtube.com/embed/nrXlY6gzTTM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$"),
+	new Movie("Wonder Woman","Wonder_Woman","fantastic","assets/image/thumbnail/wonderwoman.jpg", 2017,'<iframe src="https://www.youtube.com/embed/VSB4wGIdDwo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>', "7$")
 ];
 
 function Serie(title, gender, cover, trailer, price) {
@@ -70,6 +80,33 @@ const librarySerie = [
 	new Serie("The Walking Dead","fantastic","assets/image/thumbnail/séries/TheWalkingDead.jpg",'<iframe src="https://www.youtube.com/embed/zljB0ScC3Mw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
 	new Serie("Weeds","comedy","assets/image/thumbnail/séries/Weeds.jpg",'<iframe src="https://www.youtube.com/embed/qZDIH2gbJMM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>','3$'),
 ];
+
+
+// Modal for each Movie when clicking the images.
+
+$("img").click(function() {
+	// $(".modalHotShoot").html("");
+	for (i=0 ; i< libraryMovie.length ; i++) {
+		if ($(this).attr("src") == libraryMovie[i].cover ) { 
+			$(".hotShootTrailer").html(libraryMovie[i].trailer);
+			$(".hotShootTitle").text(libraryMovie[i].title);
+			$(".hotShootGender").text(libraryMovie[i].gender);
+			$(".modalHotShoot").modal('show');
+		}
+// 			$("body").append(
+// '<div class="modal modalHotShoot fade" id='+libraryMovie[i].id+'tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered" role="document"> <div class="modal-content"><div class="modal-header"><div class="embed-responsive embed-responsive-16by9 modal-body">'
+// +libraryMovie[i].trailer+'</div></div><div class="modal-body"><h1>'
+// +libraryMovie[i].title+'</h1><br><p>'
+// +libraryMovie[i].gender+'</p></div><div class="modal-footer"><p>Synopsis</p></div></div></div></div>'
+// 				);
+// 		}
+// // 		$(".modalHotShoot").modal('show');
+// // 		$(".modalHotShoot").modal({
+// // 			backdrop: false,
+// 		});
+	}
+
+});
 
 
 //FILTERS by gender 
@@ -342,3 +379,7 @@ $(".shopMovie").click(function(){
 		}
 	}
 });
+
+// Go home button
+
+<input type="button" value="Bouton à cliquer">

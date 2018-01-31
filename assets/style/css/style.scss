@@ -57,12 +57,13 @@
 
 .booleanyes:hover{
 	color: rgb(244,65,64);
+	cursor: pointer;
 }
 
 .booleanyes:active{
 	color: rgb(244,65,64);
 	text-shadow: 2px 0px 0px black;
-}
+	}
 
 // MAIN!!!
 
@@ -72,25 +73,37 @@
 	padding: 0;
 }
 
-// BALISES
+// MODAL LOGIN
 
-nav {
-	position: absolute;
-	z-index: 10;
-	.active {
-		background-color: rgb(244,65,64) !important;
-	}
-	.nav-link {
+#loginModal {
+	.OK {
+		background-color: rgb(244,65,64);
+		border: none;
+		border-radius: 5px;
 		color: white;
+		padding: 5px 15px 5px 15px;
 	}
-	form {
-		padding-top: 10px;
-		padding-left: 150px;
-		i {
-			color: white;
-		}
+	.createaccount {
+		background-color: rgb(244,65,64);
+		border: none;
+		border-radius: 5px;
+		color: white;
+		padding: 10px;
+	}
+	.or {
+		text-align: center;
+	}
+	.cancel {
+		background-color: rgb(244,65,64);
+		border: none;
+		border-radius: 5px;
+		color: white;
+		padding: 5px;
 	}
 }
+
+// BALISES
+
 
 h1 {
 	font-size: 40px;
@@ -110,14 +123,14 @@ span {
 
 #carouselHeader {
 	img {
-		filter: brightness(0.30);
+		filter: brightness(0.50);
 	}
 }
 
 #carouselHotShot {
 	width: 70%;
 	margin-top: 10px;
-	margin-left: 210px;
+	margin-left: calc(50% - 35%);
 	border: 1px solid #ddd;
 	overflow: hidden;
 	p {
@@ -131,7 +144,7 @@ span {
 }
 
 #Recherche {
-		background-color: rgba(0, 0, 0, 0.9);
+		background-color: rgba(0, 0, 0, 0.5);
 		border: none;
 		border-radius: 30px;
 		color: white;
@@ -159,40 +172,21 @@ span {
 	}
 }
 
-#featured_movies {
-	margin-top: 150px;
-	margin-left: 80px;
-	padding-left: 8px;
+#featured_movies, #featured_series_tv, #shop {
+	margin-top: 40px;
+	width: 90%;
+	margin-left: calc(50% - 45%);
 	h2 {
 		border-left: 3px solid red;
 		padding-left: 10px;
 	}
 }
 
-#featured_series_tv {
-	margin-top: 150px;
-	margin-left: 80px;
-	padding-left: 8px;
-	h2 {
-		border-left: 3px solid red;
-		padding-left: 10px;
-	}
-}
-
-#shop {
-	margin-top: 150px;
-	margin-left: 80px;
-	padding-left: 8px;
-	h2 {
-		border-left: 3px solid red;
-		padding-left: 10px;
-	}
-}
 
 #contact {
-	margin-top: 150px;
-	margin-left: 80px;
-	padding-left: 8px;
+	margin-top: 40px;
+	width: 90%;
+	margin-left: calc(50% - 45%);
 	.bordercontact {
 		color: black;
 		padding-left: 10px;
@@ -200,7 +194,50 @@ span {
 	}
 }
 
+#Films {
+	width: 90%;
+	margin-left: calc(50% - 45%);
+}
+
 // CLASSES
+
+.navbar {
+	position: absolute;
+	z-index: 10;
+	.nav-link {
+		background-color: rgba(143,143,143,0.3);
+		margin: 2px;
+	}
+	.home {
+		background-color: rgba(0,0,0,0);
+		margin-right: 1em;
+		margin-left: 2em;
+	}
+	form {
+		padding-top: 10px;
+		padding-left: 150px;
+		i {
+			color: white;
+		}
+	}
+}
+
+.loupe {
+	height: 25px;
+	width: 25px;
+	border-radius: 15px;
+	margin: -32px;
+}
+
+.form-control::placeholder { color: white; }
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .show > .nav-link {
+    background-color: #f44140;
+}
 
 .container-fluid {
 	padding: 0;
@@ -290,13 +327,7 @@ span {
 
 @import "_social.scss";
 
-#Recherche {
-		background-color: rgba(0, 0, 0, 0.7);
-		border: none;
-		border-radius: 30px;
-		color: white;
-		height: 25px;
-	}
+@import "_responsive.scss";
 
 //IMAGE CLICK
 img {

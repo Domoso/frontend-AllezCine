@@ -1,0 +1,102 @@
+// RESPONSIVE DESIGN
+// Responsive design dressed from bottom to top of the index.html
+
+
+
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+  		.release, .movies, .randomShoot {
+  		padding: 0 20px;
+  			ul {
+			display: flex;
+				li {
+				padding: 0 3px;
+				}
+  			}
+		}
+		.latestMovies, .reviewMovies {
+			display: none;
+		}
+		.randomShoot {
+			width: 100%;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		#movieWrapperFooter {
+			width: 100%;
+			flex-direction: row;
+			justify-content: space-between;
+			.movieBoxFooter {
+				width: 15%;
+			}
+		}
+		.subscribeBox {
+			width: 100%;
+			margin: 10.5em auto 0 auto;
+		}
+	}
+	#contact {
+		.contactFormular {
+			width: 90%;
+			margin-left: calc(50% - 45%);
+		}
+
+	}
+}
+
+@media (max-width: 500px) { 
+	footer {
+		.randomShoot {
+		display: none;
+		}
+	}
+}
+
+@media (max-width: 700px) { 
+	#shop {
+		#movieWrapperShop {
+		flex-direction: column;
+			.movieShopLeft, .movieShopRight {
+			width: 100%;
+			font-size: 0.8em;
+			margin: 0;
+
+			}
+		}
+	}
+	#movieWrapper,#movieWrapperAll,#serieWrapper,#serieWrapperAll {
+		width: 100%;
+		margin: 0;
+		.movieBox{
+			width: 22%;
+
+		}
+	}
+	#carouselHeader {
+		display: none;
+	}
+	#Films {
+		margin-top: 10em;
+		#carouselHotShot {
+			margin: 0;
+			width: 100%;
+		}
+	}
+	nav {
+		background-color: black;
+	}
+	.genderButtons {
+		margin: 0;
+	}
+	.responsive-wrap {
+		flex-wrap: wrap;
+		button {
+			margin-bottom: 0;
+		}
+	}
+	#serieWrapper {
+		margin-top: 1em;
+	}
+	
+}

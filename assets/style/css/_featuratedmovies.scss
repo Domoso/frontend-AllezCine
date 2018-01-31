@@ -1,5 +1,6 @@
 .genderButtons {
 	width: 90%;
+	margin-left: calc(50% - 45%);
 	display: flex;
 	button {
 		background-color: #f1eff1;
@@ -12,6 +13,7 @@
 
 #movieWrapper, #movieWrapperAll, #serieWrapper, #serieWrapperAll  {
 	width: 90%;
+	margin-left: calc(50% - 45%);
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
