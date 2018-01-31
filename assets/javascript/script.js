@@ -1,13 +1,13 @@
 // Landing modal
 
-// $(window).load(function() {
-// 			$("#age").modal("show");
-// 		});
-// $("#age").modal({
-// 	backdrop: "static",
-// 	keyboard: false
-// })
-//Library  creation
+$(window).load(function() {
+			$("#age").modal("show");
+		});
+$("#age").modal({
+	backdrop: "static",
+	keyboard: false
+})
+// Library  creation
 
 function Movie(title, id, gender, cover, year, trailer, price) {
 	this.title = title;
