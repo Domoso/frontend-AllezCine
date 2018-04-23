@@ -4,7 +4,7 @@
 
 Réaliser, en groupe, un site internet one-page de location et vente de films. Le site devait contraindre l'utilisateur à indiquer son âge, si celui avait 18 ans et plus, on devait l’autoriser à entrer sur le site, sinon le rediriger vers IMDB.
 Une fois sur le site, faire apparaître n’importe où sur le site une box pour la mise en garde de cookies.
-Lorsqu’on clique sur les boutons [login ou register], faire apparaître en JS ou jQuery dans une box un formulaire de connexion. (voir le site http://www.commeaucinema.com) Ce formulaire de connexion contiendra :
+Lorsqu’on clique sur les boutons [login ou register], faire apparaître en JS ou jQuery dans une box un formulaire de connexion. (voir le site http://www.commeaucinema.com) Ce formulaire de connexion devait contenir:
 
 * identifiant,
 * password,
